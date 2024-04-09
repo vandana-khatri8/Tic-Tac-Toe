@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+
+
+
+    <style>
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       html, body{
+            background-color: #86A7AC;
+            text-align: center;
+        }
+        .container{
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5vmin;
+
+        }
+        .game{
+            height: 60vmin;
+            width:  60vmin;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5vmin;
+            
+
+        }
+
+       .box{
+
+            height: 18vmin;
+            width: 18vmin;
+            border-radius: 1rem;
+            border: none;
+            box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+             font-size: 8vmin;
+             color: #7F4235;
+        }
+.reset{
+
+
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: white;
+    background-color: rgb(5, 5, 5);
+    border-radius: 1rem;
+    border: none;
+}
+.new-btn{
+    
+margin-bottom: 1vmin;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 1rem;
+    border: none;
+}
+ #msg{
+    
+    
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+.letter {
+  display: inline-block;
+  animation: letterAnimation 1s ease-in-out infinite;
+}
+@keyframes letterAnimation {
+  0% { opacity: 0; transform: translateY(-10px); }
+  50% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+
+
+/* .word {
+  animation: wordAnimation 2s linear infinite;
+}
+@keyframes wordAnimation {
+  0% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+} */
+.msg-container{
+    height: 70vmin;
+    margin-bottom: 10vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    margin: 4px;
+    height: 1vw;
+}
+.hide{
+    display: none;
+}
+   
+   
+   
+   </style>
+</head>
+<body>
+<div class="msg-container  hide">
+   <p id="msg" class="word  letter" > Winner</p>
+    <button class="new-btn"> New Game</button></div>
+<main>
+
+    <h1> Tic Tac Toe </h1>
+
+
+<div class="container">
+    
+    <div class="game">
+        <button class="box"></button>
+        <button  class="box"></button>
+        <button  class="box"></button>
+        <button  class="box"></button>
+        <button  class="box"></button>
+        <button  class="box"></button>
+        <button  class="box"></button>
+        <button  class="box"></button>
+        <button  class="box"></button>
+        
+    </div>
+    
+</div>
+<button class="reset"> Reset</button>
+</main>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
